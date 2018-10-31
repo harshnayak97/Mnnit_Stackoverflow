@@ -1,0 +1,54 @@
+<%- include('header', {reg:reg, user_name:user_name,z:z,}); -%>
+
+    <div class="container">
+		 <h2 class="heading1"><font size="20">Question </font>
+		</h2>
+	 	<div class="panel-group">
+					<div class="panel panel-info">
+						<div class="panel-heading" style="padding:0% padding-left:5px;"><font size="6"><b><%= qt%></b></font></div>
+						<div class="panel-body"><%= qb%></div>
+					</div>			
+		</div>
+	</div>
+
+	<div class="container">
+		<h2 class="heading1"><font size="20">Answers</font>
+		</h2>
+	    <div class="panel-group">
+			<% if ((a.length)===0) {%>
+				<div class="panel-body"><b>Be the first to answer!!</b></div>
+			<%} else {%>	
+				<% for(var i = 0 ,link ="/user?id="+u_id[0]; i!= a.length ;i++,link="/user?id="+u_id[i]){ %>
+					<div class="panel panel-info">
+						<div class="panel-body"><%= a[i] %></div>
+						<div class="panel-heading pull-right"> <font style="color: black">answered by: <%= u_name[i] %> </font> <a href=<%= link %> > <%= u_id[i] %></a> </div>
+					</div>
+					<br>
+					<br>
+					<br>
+				<% } %>
+			<% } %>	
+		</div>
+	</div>
+	<% if (reg) { var link ="/enter_a?id="+id %>
+	<div class="container text-centre">
+		<h2 class="heading1"><font size="5"> Submit Answer</font>
+		</h2>
+			<form class="form-style" method="POST" action= <%= link %> >
+				<div class="col-sm-12">
+					<textarea name="main" class="field-style" rows="5" cols= "135" required placeholder="Your Answer"></textarea>
+				</div>
+				<br>
+				<button type="submit" class="btn"><i class="fas fa-sign-in-alt"></i>
+						SUBMIT
+				</button>					
+			</form>
+	</div>
+		
+	<% } else { %>
+		<div class="container pull-">
+		<p class="bg-danger"><font size="4"> <a id="ho" href="login.html"><kbd>LOGIN</kbd></a> to submit answer.</font></p>
+		</div>
+	<% } %>			
+</body>
+</html>

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.main-body{
+	font-family: 'Roboto', snas-serif;
+	background: url(img/mountain.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+.main-body1{
+	background: url(img/back.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+.main-section {
+	margin: 0 auto;
+	margin-top: 130px;
+	padding: 0;
+}
+.modal-content {
+	background-color: #3b4652;  
+	opacity: .95;
+	padding: 0 18px;
+	box-shadow: 0px 0px 3px #848455;
+}
+.user-img {
+	margin-top: -50px;
+	margin-bottom: 50px;  
+	padding-left: 0px;
+}
+.user-img img {
+	height: 100px;
+	width: 300px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px #848455;
+}
+.form-group {
+	margin-bottom: 25px;
+}
+.form-group input {
+	height: 42px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 18px;
+	padding-left: 54px;
+}
+.form-group::before {
+	font-family: 'Font Awesome\ 5 Free';
+	content: "\f007";
+	position: absolute;
+	font-size: 22px;
+	color: # 555e60;
+	left: 28px;
+	padding-top: 4px;
+}
+.form-group:last-of-type::before {	
+	content: "\f084";	
+}
+.form1 {
+	width: 60% ;
+	margin: 5px 0 25px;
+	background-color: #f3f3f3;
+	content-size :19px;
+	margin: 7px 14px;
+	border-radius: 5px;
+}
+.btn1 {
+	width: 200px;
+	margin: 10px 0 25px;
+	background-color: #27c2a5;
+	color: #fff;
+	content-size: 5px;
+	margin: 7px 14px;
+	border-radius: 5px;
+	border-bottom: 4px solid #209983;
+	border-color: #191a1b;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.btn {
+	width: 130px;
+	margin: 15px 0 25px;
+	background-color: #27c2a5;
+	color: #fff;
+	content-size: 19px;
+	margin: 7px 14px;
+	border-radius: 5px;
+	border-bottom: 4px solid #219882;
+}
+
+.btn1:hover, .btn1:focus {
+	background-color: #25a890;
+	color: black;
+	border-bottom: 4px solid #25a890:important;
+}
+
+.btn:hover, .btn:focus {
+	background-color: #25a890;
+	color: black;
+	border-bottom: 4px solid #25a890:important;
+}
+.svg-inline--fa {
+	font-size: 20px;
+	margin-right: 7px; 	
+}	
+.forgot {
+	padding: 5px 0 25px;
+}
+.forgot a {
+	color: #c2fbfe;
+}
+.navbar {
+	background-color: #27c2a5;
+}
+.heading1 {
+	background-color: #6cd3c0;
+	font-family: fantasy;
+}
+#ho {
+	background-color: #27c2a5;
+	font-family: fantasy;
+	font-size: 20px;
+	color: #3b4652;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

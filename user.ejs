@@ -1,0 +1,51 @@
+<%- include('header', {reg:reg, user_name:user_name,z:z,}); -%>
+	<div class="container">
+		<h2 class="heading1">
+			<font size="5"> User Name : <%=u_name %>
+			</font>
+		</h2>
+		<h2 class="heading1">
+			<font size="5"> Registration no. : <%=id %>
+			</font>
+		</h2>
+		<% if (reg===id) {%>
+		<h2 class="heading1">
+			<font size="3"> Email Id : <%=email %>
+			</font>
+		</h2>
+		<% } %>
+		<br>
+	</div>
+	
+	<div class="container">
+		<h2 class="heading1"><font size="6"> Question Asked=>
+			</font>
+		</h2>
+	    <div class="panel-group">
+
+				<% for(var i = 0 ,link ="/ques?id="+qAskId[0]; i!= qAskT.length ;i++,link="/ques?id="+qAskId[i]){ %>
+					<div class="panel panel-info">
+						<div class="panel-heading"><%= qAskT[i] %></div>
+						<div class="panel-body"><a href=<%= link %> > <%= qAskB[i] %></a> </div>
+					</div>
+				<% } %>
+		</div>
+	</div>
+		<br>
+
+	<div class="container">
+		<h2 class="heading1"><font size="6"> Question Answered=>
+			</font>
+		</h2>
+	    <div class="panel-group">
+
+				<% for(var i = 0 ,link ="/ques?id="+qAnsId[0]; i!= qAnsT.length ;i++,link="/ques?id="+qAnsId[i]){ %>
+					<div class="panel panel-info">
+						<div class="panel-heading"><%= qAnsT[i] %></div>
+						<div class="panel-body"><a href=<%= link %> > <%= qAnsB[i] %></a> </div>
+					</div>
+				<% } %>
+		</div>
+	</div>	
+</body>
+</html>

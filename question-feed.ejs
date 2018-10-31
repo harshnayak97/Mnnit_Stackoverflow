@@ -1,0 +1,20 @@
+<%- include('header', {reg:reg, user_name:user_name,z:z,}); -%>
+	
+	<form class="form-style-9" method="POST" action="/enter_q">
+				<ul>			
+				<li>
+				<input type="text" name="q_title" class="field-style1 field-full align-none" required placeholder="What's your question about?" />
+				</li>
+				<li>
+				<textarea name="q_body" class="field-style" rows="20" required placeholder="Enter question here."></textarea>
+				</li>
+				<li>
+				<input type="submit" value="Submit"/>
+				</li>
+				</ul>
+	</form>
+		
+	
+</body>
+</html>
+

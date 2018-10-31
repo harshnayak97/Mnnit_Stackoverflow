@@ -1,0 +1,31 @@
+{
+  "name": "samadhan",
+  "version": "1.0.0",
+  "description": "qa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mnnit"
+  ],
+  "author": "lazypro , Real-Nayak , panda-Amulya",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "asyncawait": "^1.0.7",
+    "await": "^0.2.6",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cookies": "^0.7.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-flash-notification": "^0.5.0",
+    "google-auth-library": "^2.0.0",
+    "init": "^0.1.2",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}

@@ -1,0 +1,28 @@
+<%- include('header', {reg:reg, user_name:user_name,z:z,}); -%>
+
+    <div class="container">
+		 <h2 class="heading1"><font size="20">Search Result: </font>
+		</h2>
+	 	<div class="panel-group">
+					<div class="panel panel-info">
+						<div class="panel-heading" style="padding:0% padding-left:5px;"><font size="6"><b><%= qt%></b></font></div>
+					</div>			
+		</div>
+	</div>
+
+	<div class="container">
+		<h2 class="heading1"><font size="20">Realated Questions</font>
+		</h2>
+	    <div class="panel-group">
+			
+				<% for(var i = 0 ,link ="/ques?id="+id[0]; i!= q.length ;i++,link="/ques?id="+id[i]){ %>
+					<div class="panel panel-info">
+						<div class="panel-body"><a href=<%= link %> > <%= q[i] %></a></div>
+					</div>
+				<% } %>
+					
+		</div>
+	</div>
+			
+</body>
+</html>

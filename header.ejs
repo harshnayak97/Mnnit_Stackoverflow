@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viweport" content="width=device-width, initial-scale=1 ">	
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<!--<script type="text/JavaScript"  src="./controllers/authenticate-controller.js">  -->
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="text.css">
+</head>
+<body class="main-body1">
+	
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">  
+				<a class="navbar-brand" href="./"> <img src="img/logo1.jpg" alt="logo" title="Home"></a>  
+				</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+			</div>
+
+			<ul id="changeusername" class="nav navbar-nav navbar-right">
+				<li>
+					<div class="search-container">
+							<form action="/searchTag">
+								  <input type="text" placeholder="Search Tag..." name="search">
+								  <button type="submit"><i class="fa fa-search"></i></button>
+							</form>
+					 </div>
+				</li>	
+				<li>
+					<div class="search-container">
+							<form action="/searchUser">
+								  <input type="text" placeholder="Search User..." name="search">
+								  <button type="submit"><i class="fa fa-search"></i></button>
+							</form>
+					 </div>
+				</li>
+				<li>
+					<% if ( z == 1 ) { %>
+						<a id="ho" href=<%="/user?id="+reg %> ><%= user_name %></a>
+					<% } else { %>
+						<a id="ho" href="login.html">LOGIN</a>
+					<% } %>
+					
+				</li>
+
+				<li>
+					
+					<% if ( z == 1 ) { %>
+						<a id="ho" href="logout.html">LOGOUT</a>
+					<% } else { %>
+						<a id="ho" href="Signup.html">SIGNUP</a>
+					<% } %>
+				</li>
+				
+			</ul>			
+		</div>
+	</nav>

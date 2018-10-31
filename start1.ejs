@@ -1,0 +1,24 @@
+<%- include('header', {reg:reg, user_name:user_name,z:z,}); -%>
+
+	<div class="container">
+		<h2 class="heading1"><font size="20">Trending Question!!</font>
+			<font size="4">
+				<button type="submit" onclick="location.href='/ask_q';" class="btn1 pull-right"><i class="fas fa-paper-plane"></i>
+					Ask Question
+				</button>
+			</font>
+			
+		</h2>
+	  <div class="panel-group">
+
+				<% for(var i = 0 ,link ="/ques?id="+id[0]; i!= q.length ;i++,link="/ques?id="+id[i]){ %>
+					<div class="panel panel-info">
+						<div class="panel-heading">#<%= id[i]%> <%= q[i] %></div>
+						<div class="panel-body"><a href=<%= link %> > <%= qbody[i] %></a></div>
+					</div>
+				<% } %>
+		</div>
+	</div>
+	
+</body>
+</html>
